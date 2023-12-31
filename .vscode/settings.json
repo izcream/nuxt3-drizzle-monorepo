@@ -1,0 +1,8 @@
+{
+	"typescript.tsdk": "node_modules/typescript/lib",
+	"tailwindCSS.codeActions": false,
+	"editor.codeActionsOnSave": {
+		"source.fixAll": false,
+		"source.organizeImports": "explicit"
+	}
+}

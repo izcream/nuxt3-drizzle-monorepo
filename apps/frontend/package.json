@@ -1,0 +1,22 @@
+{
+	"name": "frontend",
+	"version": "1.0.0",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"build": "nuxt build",
+		"dev": "nuxt dev",
+		"generate": "nuxt generate",
+		"preview": "nuxt preview",
+		"start": "node --require dotenv/config .output/server/index.mjs",
+		"postinstall": "nuxt prepare"
+	},
+	"dependencies": {
+		"database": "workspace:*"
+	},
+	"devDependencies": {
+		"nuxt": "^3.9.0",
+		"vue": "^3.4.3",
+		"vue-router": "^4.2.5"
+	}
+}

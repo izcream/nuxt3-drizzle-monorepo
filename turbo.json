@@ -1,0 +1,23 @@
+{
+	"$schema": "https://turbo.build/schema.json",
+	"globalDependencies": ["**/.env"],
+	"pipeline": {
+		"build": {
+			"dependsOn": ["^build"],
+			"outputs": [".nuxt/**", ".output/**", "dist/**"]
+		},
+		"dev": {
+			"cache": false,
+			"persistent": true
+		},
+		"db:migrate": {
+			"cache": false
+		},
+		"db:generate": {
+			"cache": false
+		},
+		"start": {
+			"cache": true
+		}
+	}
+}
